@@ -1,0 +1,14 @@
+{
+  "A_dense": {
+    "hit_at_k": 1.0,
+    "evidence_hit": 0.9444444444444444,
+    "evidence_mrr": 0.8796296296296297,
+    "retrieval_latency_s": 0.14227777777777778
+  },
+  "B_hybrid": {
+    "hit_at_k": 1.0,
+    "evidence_hit": 0.8888888888888888,
+    "evidence_mrr": 0.8194444444444444,
+    "retrieval_latency_s": 0.13233333333333333
+  }
+}

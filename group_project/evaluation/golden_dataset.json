@@ -1,0 +1,128 @@
+[
+  {
+    "id": "q01",
+    "question": "Từ năm 2026, hộ kinh doanh có doanh thu dưới bao nhiêu thì không phải nộp thuế GTGT và thuế thu nhập cá nhân?",
+    "expected_answer": "Hộ, cá nhân kinh doanh có doanh thu dưới 500 triệu đồng một năm không phải nộp thuế GTGT (VAT) và thuế thu nhập cá nhân theo Luật Thuế thu nhập cá nhân (sửa đổi).",
+    "expected_context": "Tức là, từ năm sau, hộ và cá nhân kinh doanh chỉ phải nộp thuế VAT và thu nhập cá nhân nếu có doanh thu trên 500 triệu đồng một năm, theo Luật Thuế thu nhập cá nhân (sửa đổi).",
+    "expected_source": ["article_01.md", "article_02.md"]
+  },
+  {
+    "id": "q02",
+    "question": "Lệ phí môn bài đối với hộ kinh doanh chấm dứt từ khi nào và theo văn bản nào?",
+    "expected_answer": "Lệ phí môn bài với hộ kinh doanh chấm dứt từ ngày 1/1/2026 theo Nghị quyết 198 của Quốc hội về hỗ trợ thuế phí cho kinh tế tư nhân.",
+    "expected_context": "Ba loại thuế hộ kinh doanh đang phải nộp gồm môn bài, thu nhập cá nhân và giá trị gia tăng (VAT). Tuy nhiên, lệ phí môn bài với hộ kinh doanh sẽ chấm dứt từ 1/1/2026, theo Nghị quyết 198 của Quốc hội về hỗ trợ thuế phí cho kinh tế tư nhân.",
+    "expected_source": ["article_01.md"]
+  },
+  {
+    "id": "q03",
+    "question": "Hộ kinh doanh có doanh thu dưới 3 tỷ đồng và xác định được chi phí thì chịu thuế suất thuế TNCN bao nhiêu?",
+    "expected_answer": "Hộ có doanh thu dưới 3 tỷ đồng một năm, xác định được chi phí đầu vào chịu thuế suất 15% trên phần lãi (doanh thu trừ chi phí).",
+    "expected_context": "Cụ thể, hộ có doanh thu dưới 3 tỷ đồng một năm, xác định được chi phí đầu vào sẽ chịu thuế suất 15% trên phần lãi. Mức này tương ứng ưu đãi thuế suất thu nhập doanh nghiệp của công ty siêu nhỏ có doanh thu tương đương.",
+    "expected_source": ["article_01.md", "article_02.md"]
+  },
+  {
+    "id": "q04",
+    "question": "Thuế suất thuế TNCN tính trên lợi nhuận đối với hộ kinh doanh có doanh thu từ 3 đến 50 tỷ đồng và trên 50 tỷ đồng là bao nhiêu?",
+    "expected_answer": "Hộ kinh doanh có doanh thu 3-50 tỷ đồng một năm chịu thuế suất 17%, doanh thu trên 50 tỷ đồng chịu thuế suất 20% trên lợi nhuận.",
+    "expected_context": "Hộ kinh doanh có doanh thu một năm 3-50 tỷ đồng sẽ chịu thuế suất 17% và 20% với số thu hơn 50 tỷ.",
+    "expected_source": ["article_01.md", "article_02.md"]
+  },
+  {
+    "id": "q05",
+    "question": "Hộ kinh doanh phân phối, cung cấp hàng hóa không xác định được chi phí áp dụng tỷ lệ thuế GTGT và TNCN bao nhiêu?",
+    "expected_answer": "Với nhóm phân phối, cung cấp hàng hóa, tỷ lệ thuế TNCN là 0,5% và tỷ lệ thuế GTGT là 1% trên doanh thu.",
+    "expected_context": "Không xác định được chi phí (với nhóm doanh thu dưới 3 tỷ đồng) | Phân phối, cung cấp hàng hoá | 0,5 | 1",
+    "expected_source": ["article_01.md", "article_02.md", "article_04.md"]
+  },
+  {
+    "id": "q06",
+    "question": "Một hộ bán lẻ hàng hóa có doanh thu 1 tỷ đồng/năm, không xác định được chi phí, phải nộp tổng cộng bao nhiêu thuế mỗi năm?",
+    "expected_answer": "Hộ này nộp thuế GTGT 1% trên toàn bộ doanh thu là 10 triệu đồng và thuế TNCN 0,5% trên phần doanh thu sau khi trừ 500 triệu đồng là 2,5 triệu đồng, tổng cộng 12,5 triệu đồng mỗi năm.",
+    "expected_context": "Trong đó, số thuế VAT phải nộp theo tỷ lệ cố định 1% trên toàn bộ doanh thu, tương ứng 10 triệu đồng một năm. Riêng thuế thu nhập cá nhân, nếu họ không xác định được chi phí đầu vào, mức phải nộp bằng 0,5% doanh thu, sau khi trừ đi ngưỡng nộp thuế 500 triệu đồng, tức là 2,5 triệu. Tổng cộng, số thuế hộ này phải nộp mỗi năm là 12,5 triệu đồng.",
+    "expected_source": ["article_01.md"]
+  },
+  {
+    "id": "q07",
+    "question": "Hộ kinh doanh có doanh thu bao nhiêu thì bắt buộc phải sử dụng hóa đơn điện tử?",
+    "expected_answer": "Hộ, cá nhân kinh doanh có doanh thu hàng năm từ 1 tỷ đồng trở lên phải sử dụng hóa đơn điện tử có mã của cơ quan thuế hoặc hóa đơn khởi tạo từ máy tính tiền; hộ có doanh thu dưới 1 tỷ đồng không bắt buộc.",
+    "expected_context": "Cũng theo Luật Quản lý thuế (sửa đổi), hộ, cá nhân kinh doanh có doanh thu hàng năm từ 1 tỷ đồng trở lên phải sử dụng hóa đơn điện tử có mã của cơ quan thuế hoặc hóa đơn khởi tạo từ máy tính tiền. Hộ có doanh thu hàng năm dưới 1 tỷ đồng không bắt buộc sử dụng loại hóa đơn này.",
+    "expected_source": ["article_01.md", "article_02.md", "article_05.md"]
+  },
+  {
+    "id": "q08",
+    "question": "Hộ kinh doanh có doanh thu dưới 500 triệu đồng có phải làm thủ tục gì với cơ quan thuế không?",
+    "expected_answer": "Có. Hộ thuộc diện này vẫn phải thông báo doanh thu thực tế trước ngày 31/1 hằng năm; riêng năm 2026 phải thông báo 2 lần vào 31/7 và 31/1/2027. Nếu doanh thu thực tế vượt 500 triệu đồng thì phải khai, nộp thuế kể từ quý phát sinh.",
+    "expected_context": "Tuy nhiên, theo Thông báo ngày 31/1, Cục thuế cho biết, cá nhân, hộ kinh doanh thuộc diện này vẫn phải thông báo doanh thu thực tế trước 31/1 hàng năm. Riêng năm nay, nhóm này sẽ phải thông báo 2 lần, vào 31/7 và 31/1/2027. Trường hợp phát sinh doanh thu thực tế vượt 500 triệu đồng, họ phải khai, nộp thuế kể từ quý phát sinh.",
+    "expected_source": ["article_02.md"]
+  },
+  {
+    "id": "q09",
+    "question": "Hộ kinh doanh nộp thuế theo lợi nhuận phải lập những loại sổ kế toán nào?",
+    "expected_answer": "Phải lập 4 loại sổ kế toán: sổ doanh thu bán hàng, dịch vụ; sổ chi tiết doanh thu, chi phí; sổ vật liệu, hàng hóa (theo dõi xuất - nhập - tồn); và sổ theo dõi dòng tiền tại ngân hàng (tiền mặt, tiền gửi).",
+    "expected_context": "Về sổ sách kế toán, nhóm miễn thuế và nộp thuế theo doanh thu cần theo dõi sổ doanh thu chi tiết. Nếu nộp thuế theo lợi nhuận, họ phải lập 4 loại sổ kế toán, gồm doanh thu bán hàng, dịch vụ; chi tiết doanh thu, chi phí; vật liệu, hàng hóa (theo dõi xuất - nhập - tồn); và dòng tiền tại ngân hàng (theo dõi tiền mặt, gửi).",
+    "expected_source": ["article_02.md"]
+  },
+  {
+    "id": "q10",
+    "question": "Chi phí được trừ khi tính thuế theo lợi nhuận của hộ kinh doanh cần đáp ứng điều kiện gì?",
+    "expected_answer": "Chi phí được trừ là các khoản phát sinh thực tế liên quan tới hoạt động sản xuất - kinh doanh, có đủ hóa đơn, chứng từ; các khoản thanh toán từng lần từ 5 triệu đồng trở lên còn cần chứng từ thanh toán không dùng tiền mặt.",
+    "expected_context": "Chi phí được trừ là các khoản phát sinh thực tế liên quan tới hoạt động sản xuất - kinh doanh, có đủ hóa đơn, chứng từ. Các khoản thanh toán từng lần từ 5 triệu đồng trở lên còn cần chứng từ thanh toán không tiền mặt.",
+    "expected_source": ["article_02.md"]
+  },
+  {
+    "id": "q11",
+    "question": "Hộ kinh doanh có nhiều địa điểm kinh doanh được trừ mức 500 triệu đồng như thế nào khi tính thuế TNCN?",
+    "expected_answer": "Hộ được lựa chọn một ngành, nghề hoặc một địa điểm kinh doanh để áp dụng mức trừ 500 triệu đồng theo phương án có lợi nhất; nếu chưa trừ đủ thì được chọn thêm ngành, nghề, địa điểm khác để trừ tiếp cho đến khi đủ 500 triệu đồng.",
+    "expected_context": "Hộ kinh doanh có nhiều địa điểm được lựa chọn một ngành, nghề hoặc một địa điểm kinh doanh để áp dụng mức trừ 500 triệu đồng trước khi tính thuế thu nhập cá nhân theo phương án có lợi nhất. Nếu chưa trừ đủ 500 triệu đồng, được tiếp tục lựa chọn thêm ngành, nghề địa điểm kinh doanh khác để tiếp tục trừ cho đến khi đủ 500 triệu đồng.",
+    "expected_source": ["article_02.md"]
+  },
+  {
+    "id": "q12",
+    "question": "Người bán hàng trên sàn thương mại điện tử và trên Facebook, TikTok nộp thuế như thế nào?",
+    "expected_answer": "Với sàn thương mại điện tử có chức năng thanh toán, sàn khấu trừ, khai và nộp thuế thay cho người bán; số thuế đã khấu trừ được trừ khi xác định thuế TNCN cuối năm. Người bán trên Facebook, Zalo, TikTok (nền tảng không thu tiền của người mua) phải tự kê khai, nộp thuế.",
+    "expected_context": "Với người bán trên sàn thương mại điện tử có chức năng thanh toán, các sàn khấu trừ, nộp thay số này. Cuối năm, khoản này sẽ được trừ khi xác định số thuế thu nhập cá nhân phải nộp của hộ, cá nhân kinh doanh. Với Facebook, Zalo, TikTok - những nền tảng nhà cung cấp nước ngoài không thu tiền của người mua - họ phải tự kê khai, nộp thuế.",
+    "expected_source": ["article_01.md", "article_02.md"]
+  },
+  {
+    "id": "q13",
+    "question": "Thông tư 18/2026/TT-BTC quy định về những nội dung gì?",
+    "expected_answer": "Thông tư 18/2026/TT-BTC quy định chi tiết về hồ sơ, thủ tục thông báo doanh thu, kê khai thuế, nộp thuế, hoàn thuế, thông báo địa điểm kinh doanh, tạm ngừng, chấm dứt hoạt động kinh doanh đối với hộ kinh doanh, cá nhân kinh doanh.",
+    "expected_context": "Điều 1. Phạm vi điều chỉnh Thông tư này quy định chi tiết về hồ sơ, thủ tục thông báo doanh thu, kê khai thuế, nộp thuế, hoàn thuế, thông báo địa điểm kinh doanh, tạm ngừng; chấm dứt hoạt động kinh doanh đối với hộ kinh doanh, cá nhân kinh doanh.",
+    "expected_source": ["tt-18-2006-btc.md"]
+  },
+  {
+    "id": "q14",
+    "question": "Hộ kinh doanh không chịu thuế GTGT, không phải nộp thuế TNCN thông báo doanh thu theo mẫu nào?",
+    "expected_answer": "Hộ kinh doanh, cá nhân kinh doanh thuộc đối tượng không chịu thuế GTGT, không phải nộp thuế TNCN (kể cả hộ mới ra kinh doanh) thông báo doanh thu thực tế phát sinh trong năm theo Mẫu số 01/TKN-CNKD ban hành kèm Thông tư 18/2026/TT-BTC.",
+    "expected_context": "a) Hộ kinh doanh, cá nhân kinh doanh thuộc đối tượng không chịu thuế giá trị gia tăng, không phải nộp thuế thu nhập cá nhân (bao gồm cả hộ kinh doanh, cá nhân kinh doanh mới ra kinh doanh) thông báo doanh thu thực tế phát sinh trong năm và kê khai các loại thuế khác theo Mẫu số 01/TKN-CNKD ban hành kèm theo Thông tư này.",
+    "expected_source": ["tt-18-2006-btc.md"]
+  },
+  {
+    "id": "q15",
+    "question": "Khi thành lập hoặc thay đổi địa điểm kinh doanh, hộ kinh doanh gửi thông báo theo mẫu nào?",
+    "expected_answer": "Hộ kinh doanh, cá nhân kinh doanh gửi Thông báo về việc thành lập, thay đổi thông tin, tạm ngừng, chấm dứt hoạt động địa điểm kinh doanh theo Mẫu số 01/TB-ĐĐKD đến cơ quan thuế quản lý trụ sở; cơ quan thuế thông báo lại theo Mẫu số 02/TB-ĐĐKD.",
+    "expected_context": "Điều 3. Thông báo địa điểm kinh doanh 1. Hộ kinh doanh, cá nhân kinh doanh gửi Thông báo về việc thành lập địa điểm kinh doanh, thay đổi thông tin, tạm ngừng kinh doanh, chấm dứt hoạt động địa điểm kinh doanh đến cơ quan thuế quản lý trụ sở kinh doanh theo Mẫu số 01/TB-ĐĐKD. 2. Cơ quan thuế gửi thông báo cho người nộp thuế biết theo Mẫu số 02/TB-ĐĐKD.",
+    "expected_source": ["tt-18-2006-btc.md"]
+  },
+  {
+    "id": "q16",
+    "question": "Thông tư 152/2025/TT-BTC hướng dẫn nội dung gì và có hiệu lực từ khi nào?",
+    "expected_answer": "Thông tư 152/2025/TT-BTC của Bộ Tài chính hướng dẫn kế toán (ghi sổ kế toán, tổ chức công tác kế toán, sổ kế toán, lưu trữ tài liệu kế toán) cho hộ kinh doanh, cá nhân kinh doanh, gồm 3 chương, 8 điều và có hiệu lực từ ngày 1/1/2026.",
+    "expected_context": "Toàn văn Thông tư 152/2025/TT-BTC của Bộ Tài chính hướng dẫn kế toán cho các hộ kinh doanh, cá nhân kinh doanh. Thông tư 152/2025/TT-BTC có hiệu lực từ ngày 1/1/2026. Thông tư gồm 3 Chương, 8 Điều hướng dẫn việc ghi sổ kế toán của các hộ kinh doanh, cá nhân kinh doanh.",
+    "expected_source": ["article_03.md", "vanbangoc-tt-152-2025-btc.md"]
+  },
+  {
+    "id": "q17",
+    "question": "Thời hạn kê khai thuế theo tháng và theo quý của hộ kinh doanh là khi nào?",
+    "expected_answer": "Kê khai theo tháng chậm nhất ngày 20 của tháng kế tiếp; kê khai theo quý chậm nhất ngày cuối cùng của tháng đầu quý sau.",
+    "expected_context": "Kê khai theo tháng: chậm nhất ngày 20 của tháng kế tiếp. Kê khai theo quý: chậm nhất ngày cuối cùng của tháng đầu quý sau. Kê khai theo năm: chậm nhất ngày cuối cùng của tháng đầu năm dương lịch.",
+    "expected_source": ["article_04.md"]
+  },
+  {
+    "id": "q18",
+    "question": "Cá nhân cho thuê bất động sản trực tiếp khai thuế với cơ quan thuế dùng hồ sơ nào?",
+    "expected_answer": "Cá nhân cho thuê bất động sản trực tiếp khai thuế với cơ quan thuế dùng Tờ khai thuế đối với hoạt động cho thuê bất động sản theo Mẫu số 01/BĐS và Phụ lục Bảng kê chi tiết bất động sản theo Mẫu số 01/BK-BĐS ban hành kèm Thông tư 18/2026/TT-BTC.",
+    "expected_context": "4. Đối với cá nhân cho thuê bất động sản trực tiếp khai thuế với cơ quan thuế là Tờ khai thuế đối với hoạt động cho thuê bất động sản theo Mẫu số 01/BĐS và Phụ lục Bảng kê chi tiết bất động sản theo Mẫu số 01/BK-BĐS ban hành kèm theo Thông tư này.",
+    "expected_source": ["tt-18-2006-btc.md"]
+  }
+]

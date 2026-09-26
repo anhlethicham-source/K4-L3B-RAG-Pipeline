@@ -1,5 +1,28 @@
 # Day 8 — RAG Pipeline
 
+## Đề tài của nhóm: Trợ lý tra cứu thuế hộ kinh doanh 2026
+
+Chatbot trả lời câu hỏi về chính sách thuế, kê khai và kế toán cho hộ kinh doanh, cá nhân kinh doanh sau khi bỏ thuế khoán từ 1/1/2026.
+
+| Thành phần | Lựa chọn |
+| --- | --- |
+| Corpus | 4 văn bản pháp luật (TT 18/2026/TT-BTC, TT 152/2025/TT-BTC, NĐ 73/2016/NĐ-CP, QĐ 180/TTg) — PDF scan, OCR bằng EasyOCR; 5 bài viết (VnExpress ×2, Chinhphu.vn, MISA, Einvoice) — crawl + làm sạch boilerplate |
+| Chunking | `RecursiveCharacterTextSplitter`, 800 ký tự, overlap 120, ưu tiên tách theo heading / `Điều` |
+| Embedding / vector DB | `BAAI/bge-m3` (1024 chiều, local) · ChromaDB cosine |
+| Retrieval | Dense + BM25 (IDF kiểu Lucene) → RRF (k=60) → PageIndex fallback khi best dense cosine < `SCORE_THRESHOLD` |
+| Generation | Gemini / OpenAI / Claude theo `LLM_PROVIDER`, citation `[n]` map về `sources[n-1]`, safe refusal |
+| Evaluation | `group_project/evaluation/run_evaluation.py` — 18 câu golden, 4 metric (LLM-judge theo định nghĩa RAGAS) + hit@k, A/B dense vs hybrid |
+
+Chạy nhanh (sau khi điền `.env`):
+
+```bash
+python -m src.task3_convert_markdown        # OCR PDF scan lần đầu mất ~1 giờ trên CPU
+python -m src.task4_chunking_indexing
+python -m group_project.evaluation.calibrate_threshold
+python -m group_project.evaluation.run_evaluation
+streamlit run app.py
+```
+
 ## Mục tiêu
 
 Mỗi nhóm xây dựng một chatbot RAG trả lời câu hỏi từ bộ tài liệu do nhóm thu thập. Sản phẩm phải có hybrid retrieval, citation, giao diện chat và báo cáo đánh giá.

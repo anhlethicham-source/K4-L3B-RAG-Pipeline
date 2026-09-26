@@ -55,3 +55,7 @@ pageindex_pdfs/
 # OS
 .DS_Store
 Thumbs.db
+
+# Vector store & PageIndex cache (tạo lại bằng task4 / task8)
+chroma_db/
+data/pageindex_docs.json

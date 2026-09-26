@@ -1,0 +1,24 @@
+{
+  "A_dense": {
+    "hit_at_k": 1.0,
+    "evidence_hit": 0.9444444444444444,
+    "evidence_mrr": 0.875,
+    "retrieval_latency_s": 0.14733333333333334,
+    "faithfulness": 1.0,
+    "answer_relevance": 1.0,
+    "context_recall": 0.9259259259259259,
+    "context_precision": 0.894753086419753,
+    "average": 0.9551697530864197
+  },
+  "B_hybrid": {
+    "hit_at_k": 1.0,
+    "evidence_hit": 0.8888888888888888,
+    "evidence_mrr": 0.8166666666666667,
+    "retrieval_latency_s": 0.14705555555555555,
+    "faithfulness": 1.0,
+    "answer_relevance": 0.9888888888888889,
+    "context_recall": 0.8703703703703703,
+    "context_precision": 0.9188271604938272,
+    "average": 0.9445216049382716
+  }
+}
